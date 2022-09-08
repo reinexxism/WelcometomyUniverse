@@ -16,41 +16,39 @@
     />
     <title>Welcome to my Universe!</title>
     <meta name="description" content="About my universe" />
-    <meta name="author" content="Joohyun" />
+    <meta name="author" content="Future Developer Joo Hyun" />
     <link rel="icon" type="image/png" href="img/main_logo.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- navbar pt. -->
-    <div id="navbar">
+    <header id="navbar">
       <div id="navbar_logo">
-        <div class="navbar_logo_img">
-          <img src="img/main_logo.png" alt="Main logo of my website" />
-        </div>
+        <img src="img/main_logo.png" alt="Main logo of my website" />
       </div>
       <div id="navbar_list">
-        <ul>
-          <li class="navbar_list_number">About</li>
-          <li class="navbar_list_number">MBTI</li>
-          <li class="navbar_list_number">Hobby</li>
-          <li class="navbar_list_number">Programming</li>
-          <li class="navbar_list_number">Testimonials</li>
-          <li class="navbar_list_number">Contact</li>
+        <ul id="navbar_list_number">
+          <li>About</li>
+          <li>MBTI</li>
+          <li>Hobby</li>
+          <li>Programming</li>
+          <li>Testimonials</li>
+          <li>Contact</li>
         </ul>
       </div>
-    </div>
+    </header>
 
     <!-- About pt. -->
-    <div id="about">
+    <section id="about">
       <img src="img/home_avatar.png" alt="my mimoticon" id="about_avatar" />
       <h1 id="about_introduction">Hello, I'm <span>Choi Joo Hyun</span></h1>
       <p id="about_description">
         Who wants to be a <span>Inspiring</span> developer
       </p>
-    </div>
+    </section>
 
     <!-- MBTI -->
-    <div id="mbti">
+    <section id="mbti">
       <h1 class="title">MBTI</h1>
       <p id="mbti_description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolor
@@ -99,10 +97,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Hobby -->
-    <div id="hobby">
+    <section id="hobby">
       <h1 class="title">My Hobby</h1>
       <p id="hobby_description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repudiandae
@@ -119,19 +117,19 @@
         </ul>
       </div>
       <div id="hobby_lists">
-        <img src="img/home_avatar.png" alt="" class="hobby_list" />
-        <img src="img/home_avatar.png" alt="" class="hobby_list" />
-        <img src="img/home_avatar.png" alt="" class="hobby_list" />
-        <img src="img/home_avatar.png" alt="" class="hobby_list" />
-        <img src="img/home_avatar.png" alt="" class="hobby_list" />
-        <img src="img/home_avatar.png" alt="" class="hobby_list" />
-        <img src="img/home_avatar.png" alt="" class="hobby_list" />
-        <img src="img/home_avatar.png" alt="" class="hobby_list" />
+        <img src="img/home_avatar.png" alt="" />
+        <img src="img/home_avatar.png" alt="" />
+        <img src="img/home_avatar.png" alt="" />
+        <img src="img/home_avatar.png" alt="" />
+        <img src="img/home_avatar.png" alt="" />
+        <img src="img/home_avatar.png" alt="" />
+        <img src="img/home_avatar.png" alt="" />
+        <img src="img/home_avatar.png" alt="" />
       </div>
-    </div>
+    </section>
 
     <!-- Programming -->
-    <div id="programming">
+    <section id="programming">
       <h1 class="title">Programming</h1>
       <h3 class="sub_title">Hello world!</h3>
       <p id="programming_description">
@@ -140,10 +138,75 @@
         illo distinctio eos. Magnam laborum corrupti fugit ex. Incidunt
         asperiores repudiandae iste quod.
       </p>
-    </div>
+      <div id="skill_box">
+        <div id="skill_box_left">
+          <div id="skill_skill1">
+            <h3 class="skill_title">Programming Language</h3>
+            <div class="skill_proficiencies">
+              <div class="skill_proficiency">
+                <h3><span></span>HTML</h3>
+                <div id="skill_html_bar"></div>
+                <p>99.9%</p>
+              </div>
+              <div class="skill_proficiency">
+                <h3>CSS</h3>
+                <div id="skill_html_bar"></div>
+                <p>69%</p>
+              </div>
+              <div class="skill_proficiency">
+                <h3>JavaScript</h3>
+                <div id="skill_html_bar"></div>
+                <p>40%</p>
+              </div>
+              <div class="skill_proficiency">
+                <h3>Python</h3>
+                <div id="skill_html_bar"></div>
+                <p>75%</p>
+              </div>
+              <div class="skill_proficiency">
+                <h3>C</h3>
+                <div id="skill_html_bar"></div>
+                <p>20%</p>
+              </div>
+              <div class="skill_proficiency">
+                <h3>Java</h3>
+                <div id="skill_html_bar"></div>
+                <p>2%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="skill_box_right">
+          <div id="skill_skill2">
+            <h3 class="skill_title">Tool</h3>
+            <div class="skill_tools">
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>Eclipse</li>
+                <li>Visual Studio</li>
+                <li>DevC</li>
+                <li>Jupyter Notebook</li>
+                <li>Anaconda Navigator</li>
+              </ul>
+            </div>
+          </div>
+          <div id="skill_skill3">
+            <h3 class="skill_title">Requriement Abilities</h3>
+            <div class="Abilities">
+              <ul>
+                <li>Communication Abillity</li>
+                <li>TeamWork</li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Testimonials -->
-    <div id="testimonials">
+    <section id="testimonials">
       <h1 class="title">Testimonials</h1>
       <p id="testimonials_description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit,
@@ -180,10 +243,10 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Contact -->
-    <div id="contact">
+    <section id="contact">
       <h1 class="title">Contact Me</h1>
       <p id="contact_description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis esse
@@ -206,7 +269,7 @@
         <img src="img/home_avatar.png" alt="" class="contact_link" />
         <img src="img/home_avatar.png" alt="" class="contact_link" />
       </div>
-    </div>
+    </section>
     <script src="main.js"></script>
   </body>
 </html>
