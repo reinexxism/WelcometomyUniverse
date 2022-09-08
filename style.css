@@ -32,3 +32,33 @@
   /* Animation-duration */
   --animation-duration: 300ms;
 }
+
+/* Universial tag */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  cursor: default;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Typhography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+}
