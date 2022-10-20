@@ -38,44 +38,68 @@ body {
   cursor: default;
 }
 
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
 }
 
-li {
-  list-style: none;
-}
-
-/* Typhography */
+/* Typography */
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
-  color: var(--color-black);
+  color: var(--primary-dark-color);
   margin: 16px 0;
 }
 
 h3 {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  color: var(--color-black);
+  color: var(--secondary-color);
   margin: 8px 0;
 }
 
 p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  color: var(--color-black);
+  color: var(--secondary-dark-color);
   margin: 4px 0;
 }
 
-/* navbar pt */
-.navbar {
-  width: 100%;
-  height: 50px;
+/* navbar pt css */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-dark-color);
   align-items: center;
+  height: 80px;
 }
 
 .navbar_logo {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.navbar_logo img {
   width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar_list {
+  display: flex;
+}
+
+.navbar_list_item {
+  padding: 8px 12px;
+  margin: 0 4px;
+}
+
+.navbar_list_item:hover {
+  color: var(--primary-dark-color);
+  background-color: var(--primary-light-color);
 }
