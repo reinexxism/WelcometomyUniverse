@@ -48,6 +48,10 @@ ul {
   padding-left: 0;
 }
 
+.title {
+  margin: 0;
+}
+
 /* Typography */
 h1 {
   font-size: var(--font-large);
@@ -95,11 +99,64 @@ p {
 }
 
 .navbar_list_item {
-  padding: 8px 12px;
-  margin: 0 4px;
+  padding: 10px 8px;
+  margin: 0 12px;
 }
 
 .navbar_list_item:hover {
-  color: var(--primary-dark-color);
+  color: var(--secondary-dark-color);
   background-color: var(--primary-light-color);
+}
+
+/* About pt css */
+#about {
+  background-color: lightgray;
+}
+
+.about_left {
+  display: flex;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about_right {
+  float: left;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.home_introduction > span {
+  font-weight: bold;
+  font-size: var(--font-regular);
+  color: var(--primary-dark-color);
+}
+
+#about_description > span {
+  font-weight: bold;
+  color: var(--primary-dark-color);
+}
+/* MBTI pt css */
+#mbti {
+  background-color: darkgreen;
+}
+
+/* Hobby pt css */
+#hobby {
+  background-color: lightgray;
+}
+
+/* Programming pt css */
+#programming {
+  background-color: darkgreen;
+}
+
+/* Testimonials pt css */
+#testimonials {
+  background-color: lightgray;
+}
+
+/* Contact pt css */
+#contact {
+  background-color: darkgreen;
 }
