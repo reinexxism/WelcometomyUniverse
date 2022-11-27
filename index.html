@@ -4,64 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to my UNIVERSE!</title>
     <script
       src="https://kit.fontawesome.com/ba7b6d7fea.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <meta name="description" content="About my universe" />
+    <meta name="author" content="Future Developer Joo Hyun" />
+    <link rel="icon" type="image/png" href="img/main_logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;400;500;800&display=swap"
       rel="stylesheet"
     />
-    <title>Welcome to my Universe!</title>
-    <meta name="description" content="About my universe" />
-    <meta name="author" content="Future Developer Joo Hyun" />
-    <link rel="icon" type="image/png" href="img/main_logo.png" />
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      .study__logo {
+        size: 64px;
+      }
+    </style>
   </head>
   <body>
-    <!-- navbar pt. -->
-    <header id="navbar">
-      <div class="navbar_logo">
-        <img src="img/main_logo.png" alt="Main logo of my website" />
-        <a href="#">My UNIVERSE</a>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <img
+          src="img/main_logo.png"
+          alt="Main logo of my website"
+          width="50px"
+          height="50px"
+        />
+        <a href="#">My Universe</a>
       </div>
-      <div class="navbar_list">
-        <ul class="navbar_list">
-          <a href="#about"><li class="navbar_list_item">About</li></a>
-          <a href="#mbti"><li class="navbar_list_item">MBTI</li></a>
-          <a href="#hobby"><li class="navbar_list_item">Hobby</li></a>
-          <a href="#programming"
-            ><li class="navbar_list_item">Programming</li></a
-          >
-          <a href="#testimonials"
-            ><li class="navbar_list_item">Testimonials</li></a
-          >
-          <a href="#contact"><li class="navbar_list_item">Contact</li></a>
-        </ul>
-      </div>
-    </header>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">My MBTI</li>
+        <li class="navbar__menu__item" data-link="#skills">Hobby</li>
+        <li class="navbar__menu__item" data-link="#work">Programming</li>
+        <li class="navbar__menu__item" data-link="#testimonials">
+          Testimonials
+        </li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
 
-    <!-- About pt. -->
-    <section id="about">
-      <div class="about_left">
-        <div class="home_avatar">
-          <img src="img/home_avatar.png" alt="my mimoticon" id="about_avatar" />
-        </div>
-        <div class="home_introduction">
-          <h1 id="about_introduction">Hello, I'm <span>Choi Joo Hyun</span></h1>
-        </div>
-        <div class="home_description">
-          <p id="about_description">
-            Who wants to be a <span>Inspiring developer</span><br />
-            welcome to my Universe
-          </p>
-        </div>
-      </div>
-      <div class="about_right">
+      <!-- Toogle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-hamburger"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img
+          src="img/home_avatar.png"
+          alt="Joohyun's profile photo"
+          class="home__avatar"
+        />
+        <h1 class="home__title">Hello, I'm <span>Choi Joo Hyun</span></h1>
+        <h2 class="home__description">
+          Who wants to be a <span>Inspiring developer</span><br />
+        </h2>
         <div class="home_self_introduce">
-          <p id="about_self_introduce">
+          <p>
             안녕하세요! 저는 부산외국어대학교 일본IT전공에 재학중인 최주현이라고
             합니다.<br />
             한 개인의 삶은 광활한 우주와도 같다고 생각하며, 인생은 끊임없이 나
@@ -74,47 +81,77 @@
             세상은 넓고 즐거운 일은 가득이니까요!
           </p>
         </div>
+        <button class="home__contact" data-link="#contact">Contact Me</button>
       </div>
     </section>
 
-    <!-- MBTI -->
-    <section id="mbti">
-      <h1 class="title">Chapter1. MBTI</h1>
-      <p id="mbti_description">
-        사람마다 조금씩 다른 성향이 있고, 현대 사회에서는 그 성향을 16가지로
-        나눈 MBTI로 그것을 나타내곤 합니다.<br />1장에서는 MBTI로 보는 저의
-        성향과 성격에 대한 키워드로 나타내며, 소개하고자 합니다.
-      </p>
-      <div id="mbti_elements">
-        <div class="mbti_element">
-          <img src="img/mbti_e.png" alt="mbti_E" class="mbti_element_icon" />
-          <h3 class="mbti_element_title">주의 초점</h3>
-          <div class="mbti_element_description">
-            자기 외부에 주의 집중<br />사교적, 활동적이며 외부에서 에너지를
-            얻음<br />글보다는 말로 표현하는 것을 선호<br />경험을 통한 이해
-            중시<br />
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>Chapter1. <span>MBTI</span></h1>
+      사람마다 조금씩 다른 성향이 있고, 현대 사회에서는 그 성향을 16가지로 나눈
+      MBTI로 그것을 나타내곤 합니다.<br />1장에서는 MBTI로 보는 저의 성향과
+      성격에 대한 키워드로 나타내며, 소개하고자 합니다.
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <img
+              src="img/mbti_e.png"
+              alt="mbti_E"
+              class="mbti_element_icon"
+              width="70px"
+              height="70px"
+            />
+          </div>
+          <h2 class="major__title">주의 초점</h2>
+          <div class="major__description">
+            자기 외부에 주의 집중<br />활동적이며 외부에서 에너지를 얻음<br />글보다는
+            말로 표현하는 것을 선호<br />경험을 통한 이해 중시<br />
           </div>
         </div>
-        <div class="mbti_element">
-          <img src="img/mbti_n.png" alt="mbti_N" class="mbti_element_icon" />
-          <h3 class="mbti_element_title">인식 기능</h3>
-          <div class="mbti_element_description">
+        <div class="major">
+          <div class="major__icon">
+            <img
+              src="img/mbti_n.png"
+              alt="mbti_N"
+              class="mbti_element_icon"
+              width="70px"
+              height="70px"
+            />
+          </div>
+          <h2 class="major__title">인식 기능</h2>
+          <div class="major__description">
             직관 및 경험에 의존<br />이상주의적인 타입<br />아이디어를 중시하고
             추상적<br />미래지향적인 성향<br />
           </div>
         </div>
-        <div class="mbti_element">
-          <img src="img/mbti_t.png" alt="mbti_T" class="mbti_element_icon" />
-          <h3 class="mbti_element_title">판단 기능</h3>
-          <div class="mbti_element_description">
+        <div class="major">
+          <div class="major__icon">
+            <img
+              src="img/mbti_t.png"
+              alt="mbti_T"
+              class="mbti_element_icon"
+              width="70px"
+              height="70px"
+            />
+          </div>
+          <h2 class="major__title">판단 기능</h2>
+          <div class="major__description">
             업무 중심 타입<br />'맞다','틀리다'의 판단을 선호<br />논리적,
             분석적<br />객관적으로 상황을 판단
           </div>
         </div>
-        <div class="mbti_element">
-          <img src="img/mbti_j.png" alt="mbti_J" class="mbti_element_icon" />
-          <h3 class="mbti_element_title">생활 양식</h3>
-          <div class="mbti_element_description">
+        <div class="major">
+          <div class="major__icon">
+            <img
+              src="img/mbti_j.png"
+              alt="mbti_J"
+              class="mbti_element_icon"
+              width="70px"
+              height="70px"
+            />
+          </div>
+          <h2 class="major__title">생활 양식</h2>
+          <div class="major__description">
             분명한 목적과 방향을 선호<br />계획적이고 체계적<br />기한을
             엄수하는것에 엄격<br />뚜렷한 자기의사와 기준
           </div>
@@ -122,109 +159,227 @@
       </div>
     </section>
 
-    <!-- Hobby -->
-    <section id="hobby">
-      <h1 class="title">Chapter2. My Hobby</h1>
-      <p id="hobby_description">
-        세상은 너무나도 넓고, 재미있는 것은 너무나도 많습니다.<br />2장에서는
-        새로운 도전을 하는 것에 두려움이 없는 제가 지금까지 꾸준히 관심을 가지며
-        진행하고 있는 취미와 관심사에 대해서 소개하도록 하겠습니다.
-      </p>
-      <div id="hobby_titles">
-        <ul>
-          <li class="hobby_title">Language</li>
-          <li class="hobby_title">Movie</li>
-          <li class="hobby_title">Trip</li>
-          <li class="hobby_title">Music</li>
-        </ul>
-      </div>
-      <div id="hobby_lists">
-        <img src="img/study_japanese.png" alt="Japnanese study" />
-        <img src="img/study_c.png" alt="C language study" />
-        <img src="img/movie1.jpeg" alt="sentochihirono kamikakusi" />
-        <img src="img/movie2.jpg" alt="Inception" />
-        <img src="img/music1.jpeg" alt="tokyo machine - last summer" />
-        <img src="img/music2.jpeg" alt="lorde - perfect places" />
-        <img src="img/trip1.jpg" alt="japan sinjuku" />
-        <img src="img/trip2.jpg" alt="shanghai waitan" />
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1>Chapter2. My Hobby</h1>
+        <h3>
+          세상은 너무나도 넓고, 재미있는 것은 너무나도 많습니다.<br />2장에서는
+          새로운 도전을 하는 것에 두려움이 없는 제가 지금까지 꾸준히 관심을
+          가지며 진행하고 있는 <br />취미와 관심사에 대해서 소개하도록
+          하겠습니다.
+        </h3>
+        <div class="work__categories">
+          <button class="category__btn selected" data-filter="*">
+            Language<span class="category__count"> 8</span>
+          </button>
+          <button class="category__btn" data-filter="HTML">
+            Movie <span class="category__count"> 3</span>
+          </button>
+          <button class="category__btn" data-filter="CSS">
+            Trip <span class="category__count"> 3</span>
+          </button>
+          <button class="category__btn" data-filter="JavaScript">
+            Music <span class="category__count"> 2</span>
+          </button>
+        </div>
+        <div class="work__projects">
+          <a href="#" class="project" data-type="HTML">
+            <img
+              src="img/study_japanese.png"
+              alt="Japnanese study"
+              width="280px"
+              height="250px"
+            />
+            <div class="project__description">
+              <h3>Language Study</h3>
+              <span
+                >일본어 공부를 비롯한<br />
+                제2외국어 공부</span
+              >
+            </div>
+          </a>
+          <a href="#" class="project" data-type="HTML">
+            <img
+              src="img/movie1.jpeg"
+              alt="sentochihirono kamikakusi"
+              width="280px"
+              height="250px"
+            />
+            <div class="project__description">
+              <h3>Life Movie</h3>
+              <span>센과 치히로의 행방불명</span>
+            </div>
+          </a>
+          <a href="#" class="project" data-type="HTML">
+            <img
+              src="img/music1.jpeg"
+              alt="tokyo machine - last summer"
+              width="280px"
+              height="250px"
+            />
+            <div class="project__description">
+              <h3>Favorite Music</h3>
+              <span>내 여름날의 향수를 담은 노래</span>
+            </div>
+          </a>
+          <a href="#" class="project" data-type="CSS">
+            <img
+              src="img/trip1.jpg"
+              alt="japan sinjuku"
+              width="280px"
+              height="250px"
+            />
+            <div class="project__description">
+              <h3>Trip to</h3>
+              <span>일본의 신주쿠 거리</span>
+            </div>
+          </a>
+          <a href="#" class="project" data-type="CSS">
+            <img
+              src="img/study_c.png"
+              alt="C language study"
+              width="280px"
+              height="250px"
+            />
+            <div class="project__description">
+              <h3>Language Study</h3>
+              <span
+                >개발자가 되기 위한 <br />
+                C, Python, Java 공부</span
+              >
+            </div>
+          </a>
+          <a href="#" class="project" target="blank" data-type="CSS">
+            <img
+              src="img/movie3.jpeg"
+              alt="Devil_wear_prada"
+              width="280px"
+              height="250px"
+            />
+            <div class="project__description">
+              <h3>Life Movie</h3>
+              <span>악마는 프라다를 입는다.</span>
+            </div>
+          </a>
+          <a href="#" class="project" data-type="JavaScript">
+            <img
+              src="img/music2.jpeg"
+              alt="lorde - perfect places"
+              width="280px"
+              height="250px"
+            />
+            <div class="project__description">
+              <h3>Favorite Music</h3>
+              <span>방황하는 청춘을 담은 노래</span>
+            </div>
+          </a>
+          <a href="#" class="project" data-type="JavaScript">
+            <img
+              src="img/trip2.jpg"
+              alt="shanghai waitan"
+              width="280px"
+              height="250px"
+            />
+            <div class="project__description">
+              <h3>Trip to</h3>
+              <span>상하이의 와이탄 거리와 동방명주</span>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- Programming -->
-    <section id="programming">
-      <h1 class="title">Chanpter3. Programming</h1>
-      <h3 class="sub_title">Hello world!</h3>
-      <p id="programming_description">
-        여러분들은 <strong>Coding</strong>이 어떤 것이라고 생각하시나요?<br />
-        제가 생각하는 코딩, 즉 프로그래밍이란 내가 상상하는 모든 것들을 현실로
-        이루어줄 수 있는 수단이라고 생각합니다.<br />기다리고 있는 버스가 어디에
-        있는지 실시간으로 알려주면 좋겠다.. 오늘 나온 학식에 대해서 학우들은
-        어떻게 생각하는지 알고 싶다.. 등등<br />상상만 하던 서비스를 실제로
-        만들어주는 아주 놀랍고도 신비로운 일이라고 생각합니다.<br />이 장에서는
-        제가 사용하는 코딩 기술에 대해 소개해드리도록 하겠습니다.
-      </p>
-      <div id="skill_box">
-        <div id="skill_box_left">
-          <h3 class="skill_title">Programming Language</h3>
-          <div class="skill_proficiencies">
-            <div class="skill_proficiency">
-              <h3><span>HTML</span></h3>
-              <div id="skill_html_bar"></div>
-              <p>100%</p>
+    <!-- Skiils -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Chapter3. Programming</h1>
+        <h2>printf("%s", "Hello world!");</h2>
+        <p>
+          여러분들은 <strong>Coding</strong>이 어떤 것이라고 생각하시나요?<br />
+          제가 생각하는 코딩, 즉 프로그래밍이란 내가 상상하는 모든 것들을 현실로
+          이루어줄 수 있는 수단이라고 생각합니다.<br />기다리고 있는 버스가
+          어디에 있는지 실시간으로 알려주면 좋겠다.. 오늘 나온 학식에 대해서
+          학우들은 어떻게 생각하는지 알고 싶다.. 등등<br />상상만 하던 서비스를
+          실제로 만들어주는 아주 놀랍고도 신비로운 일이라고 생각합니다.<br />이
+          장에서는 제가 사용하는 코딩 기술에 대해 소개해드리도록 하겠습니다.
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Programming Language</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
             </div>
-            <div class="skill_proficiency">
-              <h3><span>CSS</span></h3>
-              <div id="skill_css_bar"></div>
-              <p>80%</p>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%"></div>
+              </div>
             </div>
-            <div class="skill_proficiency">
-              <h3><span>JavaScript</span></h3>
-              <div id="skill_javascript_bar"></div>
-              <p>40%</p>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JAVASCRIPT</span>
+                <span>40%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 40%"></div>
+              </div>
             </div>
-            <div class="skill_proficiency">
-              <h3><span>Python</span></h3>
-              <div id="skill_python_bar"></div>
-              <p>75%</p>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Python</span>
+                <span>60%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 60%"></div>
+              </div>
             </div>
-            <div class="skill_proficiency">
-              <h3><span>C</span></h3>
-              <div id="skill_c_bar"></div>
-              <p>30%</p>
+            <div class="skill">
+              <div class="skill__description">
+                <span>C</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%"></div>
+              </div>
             </div>
-            <div class="skill_proficiency">
-              <h3><span>Java</span></h3>
-              <div id="skill_java_bar"></div>
-              <p>10%</p>
-            </div>
-            <div class="skill_proficiency">
-              <h3><span>Machine Learning</span></h3>
-              <div id="skill_ai_bar"></div>
-              <p>10%</p>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JAVA</span>
+                <span>20%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 20%"></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div id="skill_box_right">
-          <div id="skill_skill2">
-            <h3 class="skill_title">Tool</h3>
-            <div class="skill_tools">
-              <ul>
-                <li>Visual Studio Code</li>
-                <li>Eclipse for JAVA</li>
-                <li>Visual Studio</li>
-                <li>Jupyter Notebook</li>
-                <li>Anaconda Navigator</li>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Visual Studio</span></li>
+                <li><span>Eclipse IDE for JavaDevelopers</span></li>
+                <li><span>Jupyter Notebook</span></li>
+                <li><span>Android Studio</span></li>
               </ul>
             </div>
-          </div>
-          <div id="skill_skill3">
-            <h3 class="skill_title">Requriement Abilities</h3>
-            <div class="Abilities">
-              <ul>
-                <li>Communication Abillity</li>
-                <li>TeamWork</li>
-                <li>English Ability</li>
-                <li>Passion for Coding</li>
+            <div class="etc">
+              <h3 class="skillset__title">Requriement Abilities</h3>
+              <ul class="etc__list">
+                <li><span>Communication Abillity</span></li>
+                <li><span>TeamWork</span></li>
+                <li><span>English Ability</span></li>
+                <li><span>Passion for Coding</span></li>
               </ul>
             </div>
           </div>
@@ -233,50 +388,93 @@
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials">
-      <h1 class="title">Chapter4. Testimonials</h1>
-      <p id="testimonials_description">
-        오랜 시간동안 옆에서 나를 지켜봐온 사람들은 과연 '최주현'이라는 사람에
-        대해 어떻게 생각하고 있을까요?<br />
-        4장에서는 평소 제가 존경하고 신뢰하는 사람들로부터 얻은 아주 소중하고도
-        고마운,<br />저에 대한 객관적인 평가를 담았습니다.
-      </p>
-      <div id="testimonials_lists">
-        <div class="testimonials_list_professor">
-          <img src="img/professor.png" alt="" class="testimonials_list_img" />
-          <p class="testimonials_list_comment">
-            이 학생은 현재 일본어융합학부 IT학술 동아리의 부회장직을 훌륭히 수행
-            중이며, 충분히 훌륭하게 자신의 미래 설계를 세우고 노력하고 있다고
-            판단된다. 자신의 꿈에 대한 목표와 그 내용이 명확하고, 실행
-            가능하도록 세세하게 과정을 나눔으로써 실제로 추진 가능하도록
-            노력하는 모습이 아주 인상적이다.
-          </p>
-        </div>
-        <div class="testimonials_list_jbit">
-          <img src="img/byeongheon.png" alt="" class="testimonials_list_img" />
-          <p class="testimonials_list_comment">
-            주현이는 협조성이 있는 친구이다. 다수와의 단합에 적극적인
-            커뮤니케이션을 통해 의견을 통합하는 능력이 있다. 자기 자신의 부족한
-            점에 대해 잘 인지하고 있으며, 극복하기 위해 많은 정보력을 바탕으로
-            열심히 노력하는 모습이 보인다. 자신을 더 성장시키기 위해 두려움을
-            떨쳐내고 도전하는 정신을 가지고 있으며 자신의 실력에 대한 향상심이
-            뛰어나다.
-          </p>
-        </div>
-        <div class="testimonials_list_donghun">
-          <img src="img/donghun.png" alt="" class="testimonials_list_img" />
-          <p class="testimonials_list_comment">
-            1. 굉장히 주체적이고 능동적인 사람 2.자신의 감정에 솔직한 사람 3.
-            자기 자신을 이해하고 사랑할 줄 아는 사람<br />4.꿈을 크게 꾸고
-            이루기 위해 노력하는 사람 5.계획적이고 추진력과 행동력도 뛰어난 사람
-          </p>
+    <section id="testimonials" class="section">
+      <div class="section__container">
+        <h1>Chapter4. Testimonials</h1>
+        <h3>
+          오랜 시간동안 옆에서 나를 지켜봐온 사람들은 과연 '최주현'이라는 사람에
+          대해 어떻게 생각하고 있을까요?<br />
+          4장에서는 평소 제가 존경하고 신뢰하는 사람들로부터 얻은 아주
+          소중하고도 고마운,<br />저에 대한 객관적인 평가를 담았습니다.
+        </h3>
+        <div class="testimonials">
+          <div class="testimonial">
+            <img
+              src="img/professor.png"
+              alt="Professor"
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__speech-bubble">
+              <p>
+                이 학생은 현재 일본어융합학부 IT학술 동아리의 부회장직을 훌륭히
+                수행 중이며, 충분히 훌륭하게 자신의 미래 설계를 세우고 노력하고
+                있다고 판단된다. 자신의 꿈에 대한 목표와 그 내용이 명확하고,
+                실행 가능하도록 세세하게 과정을 나눔으로써 실제로 추진
+                가능하도록 노력하는 모습이 아주 인상적이다.
+              </p>
+              <p class="name">
+                <a href="">조치영</a> / 일본어창의융합학부 학과장 교수님
+              </p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__speech-bubble">
+              <p>
+                주현이는 협조성이 있는 친구이다. 다수와의 단합에 적극적인
+                커뮤니케이션을 통해 의견을 통합하는 능력이 있다. 자기 자신의
+                부족한 점에 대해 잘 인지하고 있으며, 극복하기 위해 많은 정보력을
+                바탕으로 열심히 노력하는 모습이 보인다. 자신을 더 성장시키기
+                위해 두려움을 떨쳐내고 도전하는 정신을 가지고 있으며 자신의
+                실력에 대한 향상심이 뛰어나다.
+              </p>
+              <p class="name">
+                <a href="">오병헌</a> / 일본어창의융합학부 16학번
+              </p>
+            </div>
+            <img
+              src="img/byeongheon.png"
+              alt="byeondheon"
+              class="testimonial__avatar"
+            />
+          </div>
+          <div class="testimonial">
+            <img
+              src="img/donghun.png"
+              alt="donghun"
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__speech-bubble">
+              <p>
+                굉장히 주체적이고 능동적인 사람, 자신의 감정에 솔직한 사람, 자기
+                자신을 이해하고 사랑할 줄 아는 사람, 꿈을 크게 꾸고 이루기 위해
+                노력하는 사람, 계획적이고 추진력과 행동력도 뛰어난 사람
+              </p>
+              <p class="name"><a href="">김동훈</a> / 컴퓨터 공학과 19학번</p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__speech-bubble">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                debitis adipisci ad assumenda porro sit omnis qui sapiente,
+                dicta soluta exercitationem mollitia, eveniet, enim at unde!
+                Veniam pariatur a animi.
+              </p>
+              <p class="name"><a href="">Sungsik</a> / JBIT United</p>
+            </div>
+            <img
+              src="image/testimonials/sungsik.png"
+              alt="Sungsik"
+              class="testimonial__avatar"
+            />
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
-      <h1 class="title">Contact Me</h1>
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk With Me!</h1>
       <p id="contact_description">
         여러분 각자의 소중한 우주를 저와 같이 공유하고 싶은 분은 언제든 편하게
         연락주세요!
@@ -304,7 +502,14 @@
           ><img src="img/naverblog.png" alt="joohyun naver_blog"
         /></a>
       </div>
+      <p class="contact__right">
+        2022 Dream Coder Joo Hyun - All rights reserved
+      </p>
     </section>
-    <script src="main.js"></script>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+      <i class="fas fa-chevron-circle-up"></i>
+    </button>
   </body>
 </html>
