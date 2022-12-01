@@ -41,8 +41,8 @@
       <ul class="navbar__menu">
         <li class="navbar__menu__item active" data-link="#home">Home</li>
         <li class="navbar__menu__item" data-link="#about">My MBTI</li>
-        <li class="navbar__menu__item" data-link="#skills">Hobby</li>
-        <li class="navbar__menu__item" data-link="#work">Programming</li>
+        <li class="navbar__menu__item" data-link="#work">Hobby</li>
+        <li class="navbar__menu__item" data-link="#skills">Programming</li>
         <li class="navbar__menu__item" data-link="#testimonials">
           Testimonials
         </li>
@@ -162,7 +162,7 @@
     <!-- Work -->
     <section id="work" class="section">
       <div class="section__container">
-        <h1>Chapter2. My Hobby</h1>
+        <h1>Chapter2. <span>My Hobby</span></h1>
         <h3>
           세상은 너무나도 넓고, 재미있는 것은 너무나도 많습니다.<br />2장에서는
           새로운 도전을 하는 것에 두려움이 없는 제가 지금까지 꾸준히 관심을
@@ -171,15 +171,15 @@
         </h3>
         <div class="work__categories">
           <button class="category__btn selected" data-filter="*">
-            Language<span class="category__count"> 8</span>
+            All<span class="category__count"> 8</span>
           </button>
-          <button class="category__btn" data-filter="HTML">
-            Movie <span class="category__count"> 3</span>
+          <button class="category__btn" data-filter="Movie">
+            Movie <span class="category__count"> 2</span>
           </button>
-          <button class="category__btn" data-filter="CSS">
-            Trip <span class="category__count"> 3</span>
+          <button class="category__btn" data-filter="Trip">
+            Trip <span class="category__count"> 2</span>
           </button>
-          <button class="category__btn" data-filter="JavaScript">
+          <button class="category__btn" data-filter="Music">
             Music <span class="category__count"> 2</span>
           </button>
         </div>
@@ -199,7 +199,7 @@
               >
             </div>
           </a>
-          <a href="#" class="project" data-type="HTML">
+          <a href="#" class="project" data-type="Movie">
             <img
               src="img/movie1.jpeg"
               alt="sentochihirono kamikakusi"
@@ -211,7 +211,7 @@
               <span>센과 치히로의 행방불명</span>
             </div>
           </a>
-          <a href="#" class="project" data-type="HTML">
+          <a href="#" class="project" data-type="Music">
             <img
               src="img/music1.jpeg"
               alt="tokyo machine - last summer"
@@ -223,7 +223,7 @@
               <span>내 여름날의 향수를 담은 노래</span>
             </div>
           </a>
-          <a href="#" class="project" data-type="CSS">
+          <a href="#" class="project" data-type="Trip">
             <img
               src="img/trip1.jpg"
               alt="japan sinjuku"
@@ -250,7 +250,7 @@
               >
             </div>
           </a>
-          <a href="#" class="project" target="blank" data-type="CSS">
+          <a href="#" class="project" target="blank" data-type="Movie">
             <img
               src="img/movie3.jpeg"
               alt="Devil_wear_prada"
@@ -262,7 +262,7 @@
               <span>악마는 프라다를 입는다.</span>
             </div>
           </a>
-          <a href="#" class="project" data-type="JavaScript">
+          <a href="#" class="project" data-type="Music">
             <img
               src="img/music2.jpeg"
               alt="lorde - perfect places"
@@ -274,7 +274,7 @@
               <span>방황하는 청춘을 담은 노래</span>
             </div>
           </a>
-          <a href="#" class="project" data-type="JavaScript">
+          <a href="#" class="project" data-type="Trip">
             <img
               src="img/trip2.jpg"
               alt="shanghai waitan"
@@ -455,15 +455,17 @@
           <div class="testimonial">
             <div class="testimonial__speech-bubble">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                debitis adipisci ad assumenda porro sit omnis qui sapiente,
-                dicta soluta exercitationem mollitia, eveniet, enim at unde!
-                Veniam pariatur a animi.
+                주현이는 씩씩하고 늠름하며 좋고 싫음에 대한 감정표현이 확실하다.
+                동아리 부회장을 맡으면서 한 해 부회장으로서의 막중한 임무를
+                헤쳐나갔으며, 모든 일을 신중하게 처리하는 리더스러운 면모를
+                갖추었다
               </p>
-              <p class="name"><a href="">Sungsik</a> / JBIT United</p>
+              <p class="name">
+                <a href="">조성식</a> / 일본어창의융합학부 17학번
+              </p>
             </div>
             <img
-              src="image/testimonials/sungsik.png"
+              src="img/sungsik.png"
               alt="Sungsik"
               class="testimonial__avatar"
             />
@@ -474,37 +476,71 @@
 
     <!-- Contact -->
     <section id="contact" class="section">
-      <h1 class="contact__title">Let's talk With Me!</h1>
-      <p id="contact_description">
-        여러분 각자의 소중한 우주를 저와 같이 공유하고 싶은 분은 언제든 편하게
-        연락주세요!
-      </p>
-      <div id="contact_lists">
-        <div class="contact_list">
-          <img src="img/navermail.png" alt="" class="contact_list_img" />
-          <p class="contact_list_detail">lucy0805@naver.com</p>
+      <div class="title_box">
+        <h1 class="contact__title">Let's talk With Me!</h1>
+        <p id="contact_description">
+          여러분 각자의 소중한 우주를 저와 같이 공유하고 싶은 분은 언제든 편하게
+          연락주세요!
+        </p>
+      </div>
+      <div class="contacts_box">
+        <div id="contact_lists">
+          <div class="contact_list">
+            <img
+              src="img/navermail.png"
+              alt=""
+              class="contact_list_img"
+              width="100"
+              height="100"
+            />
+            <p class="contact_list_detail">lucy0805@naver.com</p>
+          </div>
+          <div class="contact_list">
+            <img
+              src="img/phonecall.png"
+              alt=""
+              class="contact_list_img"
+              width="100"
+              height="100"
+            />
+            <p class="contact_list_detail">010-6686-4089</p>
+          </div>
         </div>
-        <div class="contact_list">
-          <img src="img/phonecall.png" alt="" class="contact_list_img" />
-          <p class="contact_list_detail">010-6686-4089</p>
+        <div id="contact_links">
+          <div class="github">
+            <a href="https://github.com/reinexxism" target="_blank"
+              ><img
+                src="img/github.png"
+                alt="joohyun github"
+                width="100"
+                height="100"
+            /></a>
+          </div>
+          <div class="notion_blog">
+            <a
+              href="https://reinexxism.notion.site/Happy-Ending-is-Mine-538d0575badf4687a3eafaa32e98b498"
+              target="_blank"
+              ><img
+                src="img/notion.png"
+                alt="joohyun notion"
+                width="150"
+                height="100"
+            /></a>
+            <a href="https://blog.naver.com/lucy0805" target="_blank"
+              ><img
+                src="img/naverblog.png"
+                alt="joohyun naver_blog"
+                width="100"
+                height="100"
+            /></a>
+          </div>
         </div>
       </div>
-      <div id="contact_links">
-        <a href="https://github.com/reinexxism" target="_blank"
-          ><img src="img/github.png" alt="joohyun github"
-        /></a>
-        <a
-          href="https://reinexxism.notion.site/Happy-Ending-is-Mine-538d0575badf4687a3eafaa32e98b498"
-          target="_blank"
-          ><img src="img/notion.png" alt="joohyun notion"
-        /></a>
-        <a href="https://blog.naver.com/lucy0805" target="_blank"
-          ><img src="img/naverblog.png" alt="joohyun naver_blog"
-        /></a>
+      <div class="copyright">
+        <p class="contact__right">
+          2022 Dream Coder Joo Hyun - All rights reserved
+        </p>
       </div>
-      <p class="contact__right">
-        2022 Dream Coder Joo Hyun - All rights reserved
-      </p>
     </section>
 
     <!-- Arrow up -->
